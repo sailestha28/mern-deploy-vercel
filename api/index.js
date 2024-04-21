@@ -3,9 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-dotenv.config({ path: "../config.env" });
+dotenv.config({ path: "./config.env" });
 require("./db/conn");
-// const User = require("./model/userSchema");
 
 app.use(
   cors({
