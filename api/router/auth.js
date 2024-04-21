@@ -6,7 +6,7 @@ require("../db/conn");
 
 const User = require("../model/userSchema");
 
-router.get("/", (req, res) => {
+router.get("/api", (req, res) => {
   res.send(`hello world from server router js`);
 });
 
