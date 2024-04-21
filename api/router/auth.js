@@ -10,7 +10,7 @@ router.get("/api", (req, res) => {
   res.send(`hello world from server router js`);
 });
 
-router.post("/register", async (req, res) => {
+router.post("/api/register", async (req, res) => {
   const { name, email, phone, work, password, confirmPassword } = req.body;
   if (!name || !email || !phone || !work || !password || !confirmPassword) {
     return res.status(422).json({ error: "all field should be entered" });
@@ -40,7 +40,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-router.post("/signin", async (req, res) => {
+router.post("/api/signin", async (req, res) => {
   try {
     const { email, password } = req.body;
     if (!email || !password) {
