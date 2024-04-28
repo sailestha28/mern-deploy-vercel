@@ -27,11 +27,12 @@ function Register() {
                         name="confirm_password"
                         placeholder="Confirm Password"/>
 
-                    <button
-                        type="submit"
-                        className="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
-                    >Create Account
-                    </button>
+                        <button
+                  type="submit"
+                  className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+             Create Account
+              </button>
 
                     <div className="text-center text-sm text-grey-dark mt-4">
                         By signing up, you agree to the
